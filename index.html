@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will you be my Valentine? 💘</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Floating hearts & sparkles background -->
+  <div class="hearts-bg" aria-hidden="true">
+    <span class="heart">💕</span>
+    <span class="heart">💗</span>
+    <span class="heart">💖</span>
+    <span class="heart">💕</span>
+    <span class="heart">💗</span>
+    <span class="heart">💖</span>
+    <span class="heart">💕</span>
+    <span class="heart">💗</span>
+    <span class="sparkle">✦</span>
+    <span class="sparkle">✧</span>
+    <span class="sparkle">✦</span>
+    <span class="sparkle">✧</span>
+  </div>
+
+  <main class="container">
+    <!-- Top section -->
+    <header class="header">
+      <span class="header-icon">🌸</span>
+      <h1 class="heading" id="main-heading">beep &lt;3 will you be my Valentine?</h1>
+      <p class="subtext" id="subtext">easiest question of ur life bee</p>
+    </header>
+
+    <!-- Photos card -->
+    <section class="card photos-card">
+      <h2 class="card-title">our photos 📸</h2>
+      <div class="gallery" id="gallery">
+        <!-- Images loaded from script.js CONFIG - swap URLs there -->
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/300/300?random=1" alt="Memory 1">
+          <figcaption>memory #1</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/300/300?random=2" alt="Memory 2">
+          <figcaption>memory #2</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/300/300?random=3" alt="Memory 3">
+          <figcaption>memory #3</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://picsum.photos/300/300?random=4" alt="Memory 4">
+          <figcaption>memory #4</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Answer section -->
+    <section class="card answer-card">
+      <div class="answer-area" id="answer-area">
+        <div class="buttons-wrapper" id="buttons-wrapper">
+          <button type="button" class="btn btn-yes" id="btn-yes">YES PEEP💘</button>
+          <button type="button" class="btn btn-no" id="btn-no" tabindex="-1">No</button>
+        </div>
+        <div class="success-message" id="success-message" hidden>
+          <p>YAYYY 💘 I knew you'd say yes!!!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success pop-up modal -->
+  <div class="modal-overlay" id="modal-overlay" hidden>
+    <div class="modal" id="modal">
+      <h2 class="modal-title">YAY!</h2>
+      <p class="modal-message" id="modal-message">i love you infinity babie lets have a lovely time</p>
+      <button type="button" class="modal-btn" id="modal-btn">OKAYYYY 🤗</button>
+    </div>
+  </div>
+
+  <!-- Confetti canvas (optional) -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
